@@ -5,7 +5,14 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'navbar-on-scroll': 'rgba(17, 25, 40, 0.75)',
+      },
+      backgroundImage: {
+        'hero-pattern': "url('/public/images/code.jpg')",
+      },
+    },
   },
   plugins: [],
 };

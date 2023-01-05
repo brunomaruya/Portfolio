@@ -1,10 +1,29 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function Header() {
+  const headerWhenTop = 'bg-transparent';
+  const headerWhenNotTop =
+    'backdrop-blur-lg backdrop-saturate-200  bg-navbar-on-scroll ';
+
+  const [headerBg, setHeaderBg] = useState(headerWhenTop);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    function runOnScroll() {
+      if (window.scrollY > 100) {
+        setHeaderBg(headerWhenNotTop);
+        setScrollY(window.scrollY);
+      } else {
+        setHeaderBg(headerWhenTop);
+      }
+    }
+    window.addEventListener('scroll', runOnScroll);
+  }, [scrollY]);
+
   return (
-    <header className="w-screen bg-black">
-      <div className=" max-width flex items-center justify-between py-4">
+    <header className={`w-screen  fixed top-0 ${headerBg} `}>
+      <div className=" max-width h-[70px] flex items-center justify-between py-4">
         <div>
           <strong className="text-3xl">Bm</strong>
         </div>

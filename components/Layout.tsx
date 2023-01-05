@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
+// import bg from '../public/images/code.jpg';
 
 export default function Layout({ children }) {
   return (
@@ -14,7 +15,7 @@ export default function Layout({ children }) {
       </Head>
       <div>
         <Header />
-        <main>{children}</main>
+        <main className={``}>{children}</main>
         <Footer />
       </div>
     </>

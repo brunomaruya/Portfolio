@@ -10,9 +10,9 @@
 }
 
 body {
+  height: 100vh;
   font-family: Poppins, sans-serif;
   color: white;
-  background: #444;
 }
 
 .max-width {
