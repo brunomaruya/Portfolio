@@ -28,7 +28,7 @@ export default function Header() {
           <strong className="text-3xl">Bm</strong>
         </div>
         <nav>
-          <ul className="flex gap-4">
+          <ul className="flex gap-12">
             <li>
               <Link href="/">Home</Link>
             </li>
