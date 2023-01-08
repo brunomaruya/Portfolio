@@ -13,11 +13,12 @@ body {
   height: 100vh;
   font-family: Poppins, sans-serif;
   color: white;
+  background: #000;
 }
 
 .max-width {
   @apply max-w-[960px] m-auto;
 }
 .image-bg {
-  @apply fixed z-[-20]  bg-[url(../public/images/code.jpg)] bg-cover bg-center h-screen w-screen brightness-[.6];
+  @apply fixed z-[-20]  bg-[url(../public/images/code.jpg)] bg-cover bg-center h-screen w-screen brightness-[.3];
 }
