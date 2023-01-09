@@ -4,14 +4,14 @@ import React, { useEffect, useState } from 'react';
 export default function Header() {
   const headerWhenTop = 'bg-transparent';
   const headerWhenNotTop =
-    'backdrop-blur-lg backdrop-saturate-200  bg-navbar-on-scroll ';
+    'backdrop-blur-[1px] backdrop-saturate-200  bg-navbar-on-scroll ';
 
   const [headerBg, setHeaderBg] = useState(headerWhenTop);
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     function runOnScroll() {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 0) {
         setHeaderBg(headerWhenNotTop);
         setScrollY(window.scrollY);
       } else {
