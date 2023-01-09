@@ -11,11 +11,16 @@ export default function Home() {
         <main className="h-full">
           <section className=" max-width h-screen flex flex-col items-start justify-center">
             <h1 className="text-7xl">Hi There!</h1>
-            <h1 className="text-7xl">I&apos;m Bruno Maruya</h1>
+            <h1 className="text-7xl">
+              I&apos;m <span className="text-primary-color">Bruno Maruya</span>
+            </h1>
           </section>
           <section className="flex items-center gap-10">
             <div className="">
-              <h1 className="text-5xl mb-7">Let Me Introduce Myself</h1>
+              <h1 className="text-5xl mb-7">
+                Let Me <span className="text-primary-color">Introduce</span>{' '}
+                Myself
+              </h1>
               <p className="mb-8">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Praesentium consectetur earum, velit, saepe dolorem culpa
