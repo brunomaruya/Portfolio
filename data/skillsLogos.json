@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "logoUrl": "devicon-html5-plain"
+  },
+  {
+    "id": 2,
+    "logoUrl": "devicon-css3-plain"
+  },
+  {
+    "id": 3,
+    "logoUrl": "devicon-javascript-plain"
+  },
+  {
+    "id": 4,
+    "logoUrl": "devicon-typescript-plain"
+  },
+  {
+    "id": 5,
+    "logoUrl": "devicon-react-plain"
+  },
+  {
+    "id": 6,
+    "logoUrl": "devicon-nextjs-plain"
+  },
+  {
+    "id": 7,
+    "logoUrl": "devicon-tailwindcss-plain"
+  }
+]
