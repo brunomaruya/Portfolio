@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import { House, User } from 'phosphor-react';
 
 export default function Header() {
   const headerWhenTop = 'bg-transparent';
@@ -24,21 +25,25 @@ export default function Header() {
 
   return (
     <header className={`w-screen  fixed top-0 ${headerBg} z-30`}>
-      <div className=" max-width h-[70px] flex items-center justify-between py-4">
+      <div className=" px-40 h-[70px] flex items-center justify-between py-4">
         <div>
           <strong className="text-3xl text-primary-color">Bm</strong>
         </div>
         <nav>
-          <ul className="flex gap-12">
+          <ul className="flex gap-12 text-xl">
             <li className={router.pathname == '/' ? 'text-primary-color' : ''}>
-              <Link href="/">Home</Link>
+              <Link href="/" className="flex items-center gap-1">
+                <House /> Home
+              </Link>
             </li>
             <li
               className={
                 router.pathname == '/about' ? 'text-primary-color' : ''
               }
             >
-              <Link href="/about">About</Link>
+              <Link href="/about" className="flex items-center gap-1">
+                <User /> About
+              </Link>
             </li>
             <li
               className={
