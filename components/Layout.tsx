@@ -23,6 +23,7 @@ export default function Layout({ children }) {
           <div className="image-bg "></div>
           <div className="max-width ">{children}</div>
         </main>
+
         <Footer />
       </div>
     </>
