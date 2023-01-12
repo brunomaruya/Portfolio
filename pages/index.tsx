@@ -55,7 +55,11 @@ export default function Home() {
             </h2>
             <ul className="mt-5 flex gap-x-8">
               <li>
-                <Link href={'https://github.com/brunomaruya'} target="_blank">
+                <Link
+                  href={'https://github.com/brunomaruya'}
+                  target="_blank"
+                  title="https://github.com/brunomaruya"
+                >
                   <i className="devicon-github-original text-4xl "></i>
                 </Link>
               </li>
@@ -63,6 +67,7 @@ export default function Home() {
                 <Link
                   href={'https://www.linkedin.com/in/bruno-maruya/'}
                   target="_blank"
+                  title="https://www.linkedin.com/in/bruno-maruya/"
                 >
                   <i className="devicon-linkedin-plain text-4xl "></i>
                 </Link>
