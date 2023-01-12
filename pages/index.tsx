@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Footer from '../components/Footer';
 import Layout from '../components/Layout';
 import bg from '../public/images/code.jpg';
@@ -45,6 +46,28 @@ export default function Home() {
               alt=""
               src={profileImg}
             />
+          </section>
+          <section className="flex flex-col justify-center items-center mt-20">
+            <h1 className="text-5xl mb-7">Find Me On</h1>
+            <h2 className="text-2xl">
+              Feel free to{' '}
+              <strong className="text-primary-color ">connect</strong> with me
+            </h2>
+            <ul className="mt-5 flex gap-x-8">
+              <li>
+                <Link href={'https://github.com/brunomaruya'} target="_blank">
+                  <i className="devicon-github-original text-4xl "></i>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={'https://www.linkedin.com/in/bruno-maruya/'}
+                  target="_blank"
+                >
+                  <i className="devicon-linkedin-plain text-4xl "></i>
+                </Link>
+              </li>
+            </ul>
           </section>
         </main>
       </Layout>

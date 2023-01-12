@@ -23,7 +23,7 @@ export default function Header() {
   }, [scrollY]);
 
   return (
-    <header className={`w-screen  fixed top-0 ${headerBg} `}>
+    <header className={`w-screen  fixed top-0 ${headerBg} z-30`}>
       <div className=" max-width h-[70px] flex items-center justify-between py-4">
         <div>
           <strong className="text-3xl text-primary-color">Bm</strong>
