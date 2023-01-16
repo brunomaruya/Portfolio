@@ -31,7 +31,7 @@ export default function About() {
             </div>
           </section>
           <section className="w-full  ">
-            <h1 className="text-5xl mb-14 flex justify-center">
+            <h1 className="text-5xl mt-[-8rem] mb-14 flex justify-center">
               <span className="text-primary-color">Skills</span>
             </h1>
             <div className="flex justify-center flex-wrap gap-x-20 gap-y-10">

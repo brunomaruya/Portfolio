@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import { House, User } from 'phosphor-react';
+import { House, Lightbulb, Newspaper, User } from 'phosphor-react';
 
 export default function Header() {
   const headerWhenTop = 'bg-transparent';
@@ -25,14 +25,19 @@ export default function Header() {
 
   return (
     <header className={`w-screen  fixed top-0 ${headerBg} z-30`}>
-      <div className=" px-40 h-[70px] flex items-center justify-between py-4">
+      <div className=" max-width h-[70px] flex items-center justify-between py-4">
         <div>
-          <strong className="text-3xl text-primary-color">Bm</strong>
+          <Link href="/">
+            <strong className="text-3xl text-primary-color">Bm</strong>
+          </Link>
         </div>
         <nav>
           <ul className="flex gap-12 text-xl">
             <li className={router.pathname == '/' ? 'text-primary-color' : ''}>
-              <Link href="/" className="flex items-center gap-1">
+              <Link
+                href="/"
+                className="flex items-center gap-1 hover:text-gray-400 duration-100 "
+              >
                 <House /> Home
               </Link>
             </li>
@@ -41,7 +46,10 @@ export default function Header() {
                 router.pathname == '/about' ? 'text-primary-color' : ''
               }
             >
-              <Link href="/about" className="flex items-center gap-1">
+              <Link
+                href="/about"
+                className="flex items-center gap-1 hover:text-gray-400 duration-100"
+              >
                 <User /> About
               </Link>
             </li>
@@ -50,14 +58,25 @@ export default function Header() {
                 router.pathname == '/projects' ? 'text-primary-color' : ''
               }
             >
-              <Link href="/projects">Projects</Link>
+              <Link
+                href="/projects"
+                className="flex items-center gap-1 hover:text-gray-400 duration-100"
+              >
+                <Lightbulb /> Projects
+              </Link>
             </li>
             <li
               className={
                 router.pathname == '/resume' ? 'text-primary-color' : ''
               }
             >
-              <Link href="/resume">Resume</Link>
+              <Link
+                href="/resume"
+                className="flex items-center gap-1 hover:text-gray-400 duration-100"
+              >
+                <Newspaper />
+                Resume
+              </Link>
             </li>
           </ul>
         </nav>

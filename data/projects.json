@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Coffee Delivery",
+    "description": "It's a Project from Ignite's Course,fsajdifasidfjiasfjiafsjaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "githubrUrl": "https://github.com/brunomaruya/CoffeeDelievery",
+    "imageUrl": "/../public/images/projectsImgs/coffeedelivery.png",
+    "url": "https://coffee-delievery.vercel.app/"
+  },
+  {
+    "id": 2,
+    "name": "Coffee Delivery",
+    "description": "It's a Project from Ignite's Course",
+    "githubrUrl": "https://github.com/brunomaruya/CoffeeDelievery",
+    "imageUrl": "/../public/images/projectsImgs/coffeedelivery.png",
+    "url": "https://coffee-delievery.vercel.app/"
+  },
+  {
+    "id": 3,
+    "name": "Coffee Delivery",
+    "description": "It's a Project from Ignite's Course",
+    "githubrUrl": "https://github.com/brunomaruya/CoffeeDelievery",
+    "imageUrl": "/../public/images/projectsImgs/coffeedelivery.png",
+    "url": "https://coffee-delievery.vercel.app/"
+  }
+]
