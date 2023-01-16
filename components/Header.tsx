@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import { House, Lightbulb, User } from 'phosphor-react';
+import { House, Lightbulb, Newspaper, User } from 'phosphor-react';
 
 export default function Header() {
   const headerWhenTop = 'bg-transparent';
@@ -34,7 +34,10 @@ export default function Header() {
         <nav>
           <ul className="flex gap-12 text-xl">
             <li className={router.pathname == '/' ? 'text-primary-color' : ''}>
-              <Link href="/" className="flex items-center gap-1">
+              <Link
+                href="/"
+                className="flex items-center gap-1 hover:text-gray-400 duration-100 "
+              >
                 <House /> Home
               </Link>
             </li>
@@ -43,7 +46,10 @@ export default function Header() {
                 router.pathname == '/about' ? 'text-primary-color' : ''
               }
             >
-              <Link href="/about" className="flex items-center gap-1">
+              <Link
+                href="/about"
+                className="flex items-center gap-1 hover:text-gray-400 duration-100"
+              >
                 <User /> About
               </Link>
             </li>
@@ -52,7 +58,10 @@ export default function Header() {
                 router.pathname == '/projects' ? 'text-primary-color' : ''
               }
             >
-              <Link href="/projects" className="flex items-center gap-1">
+              <Link
+                href="/projects"
+                className="flex items-center gap-1 hover:text-gray-400 duration-100"
+              >
                 <Lightbulb /> Projects
               </Link>
             </li>
@@ -61,7 +70,13 @@ export default function Header() {
                 router.pathname == '/resume' ? 'text-primary-color' : ''
               }
             >
-              <Link href="/resume">Resume</Link>
+              <Link
+                href="/resume"
+                className="flex items-center gap-1 hover:text-gray-400 duration-100"
+              >
+                <Newspaper />
+                Resume
+              </Link>
             </li>
           </ul>
         </nav>
