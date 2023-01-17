@@ -33,7 +33,9 @@ export default function Header() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuStyles = isMenuOpen ? 'right-0 ' : 'right-[-20rem] ';
+  const menuStyles = isMenuOpen
+    ? 'right-0 shadow-[0_0_60px_0_rgba(0,0,0,1)] '
+    : 'right-[-20rem] shadow-none ';
 
   const closeMenu = () => {
     setIsMenuOpen(false);
@@ -59,9 +61,10 @@ export default function Header() {
           <nav className={`  `}>
             <ul
               className={`absolute flex ${menuStyles} 
+              
               duration-100  flex-col w-80 top-0  h-screen
                bg-background  px-24 pt-20 gap-12 text-xl 
-               lg:bg-transparent lg:flex-row lg:static lg:h-full lg:gap-5 lg:p-0  lg:w-full lg:duration-[0] `}
+               lg:bg-transparent lg:flex-row lg:static lg:h-full lg:gap-5 lg:p-0  lg:w-full lg:duration-[0] lg:shadow-none`}
             >
               <X
                 onClick={closeMenu}
