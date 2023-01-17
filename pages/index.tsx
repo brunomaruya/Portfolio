@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <main className="h-full">
+        <main className="h-full px-10">
           <section className=" max-width h-screen flex flex-col items-start justify-center">
             <div className=" w-full flex justify-between items-center">
               <div>
