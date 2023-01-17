@@ -3,6 +3,11 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@400;700&display=swap');
 
+:root {
+  --primary-color: rgb(11, 135, 193);
+  --secondary-color: rgba(17, 25, 40, 0.75);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,4 +26,26 @@ body {
 }
 .image-bg {
   @apply fixed z-[-20]  bg-[url(../public/images/code.jpg)] bg-cover bg-center h-screen w-screen brightness-[.3];
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) var(--secondary-color);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+
+  border-radius: 14px;
+  border: 3px solid var(--primary-color);
 }
