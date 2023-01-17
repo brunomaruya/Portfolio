@@ -17,7 +17,7 @@ export default function Projects() {
             {projectsData.map((project) => (
               <div
                 key={project.id}
-                className="text-center bg-navbar-on-scroll py-3 px-4 border border-primary-color rounded-md"
+                className="text-center bg-navbar-on-scroll py-3 px-4 border border-primary-color rounded-md hover:scale-[1.02] duration-200"
               >
                 <Image
                   width={400}
