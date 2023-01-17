@@ -11,10 +11,18 @@ export default function Home() {
       <Layout>
         <main className="h-full">
           <section className=" max-width h-screen flex flex-col items-start justify-center">
-            <h1 className="text-7xl">Hi There!</h1>
-            <h1 className="text-7xl">
-              I&apos;m <span className="text-primary-color">Bruno Maruya</span>
-            </h1>
+            <div className=" w-full flex justify-between items-center">
+              <div>
+                <h1 className="text-7xl">Hi There!</h1>
+                <h1 className="text-7xl">
+                  I&apos;m
+                  <span className="text-primary-color">Bruno Maruya</span>
+                </h1>
+              </div>
+              <div className="">
+                <img src="https://media.giphy.com/media/zhYSVCirREeIZtONCI/giphy.gif" />
+              </div>
+            </div>
           </section>
           <section className="flex items-center gap-10">
             <div className="">
