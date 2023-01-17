@@ -8,6 +8,7 @@ import {
   List,
   Newspaper,
   User,
+  X,
 } from 'phosphor-react';
 
 export default function Header() {
@@ -30,18 +31,42 @@ export default function Header() {
     window.addEventListener('scroll', runOnScroll);
   }, [scrollY]);
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const menuStyles = isMenuOpen ? 'right-0 ' : 'right-[-20rem] ';
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+  const openMenu = () => {
+    setIsMenuOpen(true);
+    console.log('opened');
+  };
+
   return (
     <>
       <header className={`w-screen fixed top-0 ${headerBg} z-30 px-10 `}>
-        <div className=" max-width h-[70px] flex items-center justify-between py-4">
+        <div className=" max-width h-[70px]  flex items-center justify-between py-4">
           <div>
             <Link href="/">
               <strong className="text-3xl text-primary-color">Bm</strong>
             </Link>
           </div>
-          <List className="block text-4xl md:block lg:hidden" />
-          <nav className="hidden md:hidden lg:block">
-            <ul className="flex gap-12 text-xl ">
+          <List
+            onClick={openMenu}
+            className={`absolute right-0 mx-10  text-4xl md:block lg:hidden`}
+          />
+          <nav className={`  `}>
+            <ul
+              className={`absolute flex ${menuStyles} 
+              duration-100  flex-col w-80 top-0  h-screen
+               bg-background  px-24 pt-20 gap-12 text-xl 
+               lg:bg-transparent lg:flex-row lg:static lg:h-full lg:gap-5 lg:p-0  lg:w-full lg:duration-[0] `}
+            >
+              <X
+                onClick={closeMenu}
+                className="absolute z-30 top-0 right-0 text-4xl my-5 mx-10 lg:hidden"
+              />
               <li
                 className={router.pathname == '/' ? 'text-primary-color' : ''}
               >
