@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Coffee Delivery",
-    "description": "It's a Project from Ignite's Course,fsajdifasidfjiasfjiafsjaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "description": "A challenge from Ignite Course(Brazilian course) which is a Coffee Shop. It is just a project for practice purposes only, you can't buy any coffee there!",
     "githubrUrl": "https://github.com/brunomaruya/CoffeeDelievery",
     "imageUrl": "/../public/images/projectsImgs/coffeedelivery.png",
     "url": "https://coffee-delievery.vercel.app/"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "ChriZtianK",
-    "description": "It's a Project from Ignite's Course",
+    "description": "A portfolio website made for my photographer friend 📷",
     "githubrUrl": "https://github.com/brunomaruya/ChriZtianKPortfolio",
     "imageUrl": "/../public/images/projectsImgs/chriztiank.png",
     "url": "https://chriztiank.vercel.app/"

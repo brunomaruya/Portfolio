@@ -9,11 +9,11 @@ export default function About() {
   return (
     <>
       <Layout>
-        <main className="max-width">
+        <main className="max-width px-10">
           <section className=" h-screen flex flex-col items-start justify-center">
-            <div className="flex gap-10">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
               <div>
-                <h1 className="text-5xl mb-4">
+                <h1 className="text-5xl mb-4 text-center md:text-left">
                   <span className="text-primary-color">Know Who </span>I Am
                 </h1>
                 <p>

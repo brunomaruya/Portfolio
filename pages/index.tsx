@@ -9,13 +9,16 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <main className="h-full">
+        <main className="h-full px-10">
           <section className=" max-width h-screen flex flex-col items-start justify-center">
-            <div className=" w-full flex justify-between items-center">
+            <div className=" w-full pt-16 md:pt-0 flex flex-col md:flex-row justify-between items-center gap-8">
               <div>
-                <h1 className="text-7xl">Hi There!</h1>
-                <h1 className="text-7xl">
-                  I&apos;m
+                <h1 className="text-5xl text-center sm:text-6xl lg:text-7xl sm:text-left">
+                  Hi There!
+                </h1>
+
+                <h1 className="text-5xl text-center sm:text-6xl lg:text-7xl sm:text-left">
+                  I&apos;m&nbsp;
                   <span className="text-primary-color">Bruno Maruya</span>
                 </h1>
               </div>
@@ -24,9 +27,9 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="flex items-center gap-10">
+          <section className="flex flex-col md:flex-row items-center gap-10">
             <div className="">
-              <h1 className="text-5xl mb-7">
+              <h1 className="text-5xl mb-7 text-center md:text-left">
                 Let Me <span className="text-primary-color">Introduce</span>{' '}
                 Myself
               </h1>

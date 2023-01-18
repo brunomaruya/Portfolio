@@ -8,23 +8,23 @@ import { AppWindow } from 'phosphor-react';
 export default function Projects() {
   return (
     <Layout>
-      <main className=" pt-[200px]">
-        <section className="min-h-screen">
+      <main className="max-width pt-[200px] px-10">
+        <section className="min-h-screen ">
           <h1 className="text-5xl mb-24 flex justify-center text-primary-color">
             Projects
           </h1>
-          <div className="grid grid-cols-3 grid-flow-row gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-10 sm:px-20 md:px-10">
             {projectsData.map((project) => (
               <div
                 key={project.id}
-                className="text-center bg-navbar-on-scroll py-3 px-4 border border-primary-color rounded-md hover:scale-[1.02] duration-200"
+                className="text-center flex flex-col items-center bg-navbar-on-scroll py-3 px-4 border border-primary-color rounded-md hover:scale-[1.02] duration-200"
               >
                 <Image
                   width={400}
                   height={300}
                   src={project.imageUrl}
                   alt="project image"
-                  className="mb-5 rounded-sm"
+                  className="mb-5 rounded-sm "
                 />
                 <h1 className="text-3xl mb-5">{project.name}</h1>
                 <p className="break-words mb-5">{project.description}</p>
