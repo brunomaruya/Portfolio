@@ -8,9 +8,9 @@ import { AppWindow } from 'phosphor-react';
 export default function Projects() {
   return (
     <Layout>
-      <main className="max-width pt-[200px] px-10">
+      <main className="max-width pt-32  px-10">
         <section className="min-h-screen ">
-          <h1 className="text-5xl mb-24 flex justify-center text-primary-color">
+          <h1 className="text-5xl mb-24 text-center text-primary-color">
             Projects
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-10 sm:px-20 md:px-10">
