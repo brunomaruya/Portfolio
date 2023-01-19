@@ -14,6 +14,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern': "url('/public/images/code.jpg')",
+        'contact-pattern': "url('/public/images/code2.jpg')",
       },
     },
   },

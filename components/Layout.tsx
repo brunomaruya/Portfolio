@@ -19,7 +19,7 @@ export default function Layout({ children }) {
       </Head>
       <div>
         <Header />
-        <main className="h-full mb-40">
+        <main className="h-full ">
           <div className="image-bg "></div>
           <div className="max-width ">{children}</div>
         </main>

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <main className="h-full px-10">
+        <main className="h-full px-10 mb-40">
           <section className=" max-width h-screen flex flex-col items-start justify-center">
             <div className=" w-full pt-16 md:pt-0 flex flex-col md:flex-row justify-between items-center gap-8">
               <div>
@@ -19,7 +19,9 @@ export default function Home() {
 
                 <h1 className="text-5xl text-center sm:text-6xl lg:text-7xl sm:text-left">
                   I&apos;m&nbsp;
-                  <span className="text-primary-color">Bruno Maruya</span>
+                  <span className="block xl:inline text-primary-color">
+                    Bruno Maruya
+                  </span>
                 </h1>
               </div>
               <div className="">

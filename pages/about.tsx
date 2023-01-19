@@ -10,7 +10,7 @@ export default function About() {
     <>
       <Layout>
         <main className="max-width px-10">
-          <section className=" h-screen flex flex-col items-start justify-center">
+          <section className="mt-5 md:mt-0 h-screen flex flex-col items-start justify-center">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
               <div>
                 <h1 className="text-5xl mb-4 text-center md:text-left">
@@ -26,12 +26,12 @@ export default function About() {
               <Image
                 src={profileImg}
                 alt=""
-                className="max-w-[15rem] max-h-[15rem] object-cover"
+                className="max-w-[15rem] max-h-[15rem] object-cover "
               />
             </div>
           </section>
           <section className="w-full  ">
-            <h1 className="text-5xl mt-[-8rem] mb-14 flex justify-center">
+            <h1 className="text-5xl mt-[-3rem] md:mt-[-8rem] mb-14 flex justify-center">
               <span className="text-primary-color">Skills</span>
             </h1>
             <div className="flex justify-center flex-wrap gap-x-20 gap-y-10">
@@ -48,7 +48,7 @@ export default function About() {
               })}
             </div>
           </section>
-          <section className="mt-48 flex flex-col items-center justify-center">
+          <section className="mt-48 mb-40 flex flex-col items-center justify-center">
             <h1 className="text-5xl mb-14 ">
               Days I&nbsp;<strong className="text-primary-color">Code</strong>
             </h1>
