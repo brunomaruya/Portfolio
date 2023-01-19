@@ -4,10 +4,23 @@ import React, { FormEvent, useRef } from 'react';
 import Layout from '../components/Layout';
 import background from '../public/images/code2.jpg';
 import emailjs from '@emailjs/browser';
-import { type } from 'os';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
+
+  const notify = () =>
+    toast('Your message has been successfully sent!', {
+      position: 'bottom-center',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'dark',
+    });
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -28,7 +41,7 @@ export default function Contact() {
         }
       );
     e.currentTarget.reset();
-    console.log('working');
+    notify();
   };
 
   return (
@@ -55,6 +68,7 @@ export default function Contact() {
                   id="name"
                   placeholder="Enter Your Name"
                   name="from_name"
+                  required
                 />
               </div>
 
@@ -64,10 +78,11 @@ export default function Contact() {
                 </label>
                 <input
                   className="text-black py-2 px-4 rounded-md w-full"
-                  type="text"
+                  type="email"
                   id="email"
                   placeholder="Enter Your Email"
                   name="email"
+                  required
                 />
               </div>
             </div>
@@ -83,6 +98,7 @@ export default function Contact() {
                 cols={30}
                 rows={10}
                 placeholder="Enter Your Message"
+                required
               ></textarea>
             </div>
             <input
@@ -91,6 +107,19 @@ export default function Contact() {
               value="Send"
             />
           </form>
+          <ToastContainer
+            position="bottom-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+            style={{ width: '400px' }}
+          />
         </section>
         <section
           className="bg-gradient-to-b from-gray-800  to-blue-900  relative  w-screen left-[calc(-50vw_+_50%)]
