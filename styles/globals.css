@@ -25,7 +25,7 @@ body {
   @apply max-w-[1400px] m-auto;
 }
 .image-bg {
-  @apply fixed z-[-20]  bg-[url(../public/images/code.jpg),] bg-cover bg-center h-screen w-screen brightness-[.3];
+  @apply fixed z-[-20]  bg-[url(../public/images/code.jpg)] bg-cover bg-center h-screen w-screen brightness-[.3];
 }
 
 * {

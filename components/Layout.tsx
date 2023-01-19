@@ -4,7 +4,7 @@ import Footer from './Footer';
 import Header from './Header';
 // import bg from '../public/images/code.jpg';
 
-export default function Layout({ children }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Head>
