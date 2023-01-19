@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import {
+  Envelope,
   Hamburger,
   House,
   Lightbulb,
@@ -115,6 +116,19 @@ export default function Header() {
                 >
                   <Newspaper />
                   Resume
+                </Link>
+              </li>
+              <li
+                className={
+                  router.pathname == '/contact' ? 'text-primary-color' : ''
+                }
+              >
+                <Link
+                  href="/contact"
+                  className="flex items-center gap-1 hover:text-gray-400 duration-100"
+                >
+                  <Envelope />
+                  Contact me
                 </Link>
               </li>
             </ul>

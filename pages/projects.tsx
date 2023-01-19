@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <Layout>
       <main className="max-width pt-32  px-10">
-        <section className="min-h-screen ">
+        <section className="min-h-screen mb-40 ">
           <h1 className="text-5xl mb-24 text-center text-primary-color">
             Projects
           </h1>

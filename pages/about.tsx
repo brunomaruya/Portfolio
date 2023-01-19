@@ -48,7 +48,7 @@ export default function About() {
               })}
             </div>
           </section>
-          <section className="mt-48 flex flex-col items-center justify-center">
+          <section className="mt-48 mb-40 flex flex-col items-center justify-center">
             <h1 className="text-5xl mb-14 ">
               Days I&nbsp;<strong className="text-primary-color">Code</strong>
             </h1>
