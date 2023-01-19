@@ -1,10 +1,36 @@
 import Image from 'next/image';
 import { Envelope, GithubLogo, LinkedinLogo } from 'phosphor-react';
-import React from 'react';
+import React, { FormEvent, useRef } from 'react';
 import Layout from '../components/Layout';
 import background from '../public/images/code2.jpg';
+import emailjs from '@emailjs/browser';
+import { type } from 'os';
 
 export default function Contact() {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        String(process.env.NEXT_PUBLIC_ANALYTICS_SERVICE_ID),
+        String(process.env.NEXT_PUBLIC_ANALYTICS_TEMPLATE_ID),
+        e.currentTarget,
+        process.env.NEXT_PUBLIC_ANALYTICS_PUBLIC_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.currentTarget.reset();
+    console.log('working');
+  };
+
   return (
     <Layout>
       <main className="max-width px-10 pt-32 flex flex-col md:grid md:grid-cols-2 md:grid-flow-row md:gap-10 overflow-hidden">
@@ -13,17 +39,22 @@ export default function Contact() {
             Send me a Message
           </h1>
 
-          <form className="flex flex-col gap-10">
+          <form
+            className="flex flex-col gap-10"
+            ref={form}
+            onSubmit={sendEmail}
+          >
             <div className="flex flex-col gap-5 lg:flex-row lg:w-full  ">
               <div className="flex flex-col gap-3 lg:w-full">
                 <label className="text-xl" htmlFor="name">
                   Your Name
                 </label>
                 <input
-                  className="py-2 px-4 rounded-md w-full"
+                  className="text-black py-2 px-4 rounded-md w-full"
                   type="text"
                   id="name"
                   placeholder="Enter Your Name"
+                  name="from_name"
                 />
               </div>
 
@@ -32,10 +63,11 @@ export default function Contact() {
                   Your Email
                 </label>
                 <input
-                  className="py-2 px-4 rounded-md w-full"
+                  className="text-black py-2 px-4 rounded-md w-full"
                   type="text"
                   id="email"
                   placeholder="Enter Your Email"
+                  name="email"
                 />
               </div>
             </div>
@@ -45,7 +77,7 @@ export default function Contact() {
                 Your Message
               </label>
               <textarea
-                className="py-2 px-4 rounded-md"
+                className="text-black py-2 px-4 rounded-md"
                 name="message"
                 id="message"
                 cols={30}
