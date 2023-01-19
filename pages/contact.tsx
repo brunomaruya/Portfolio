@@ -46,7 +46,7 @@ export default function Contact() {
 
   return (
     <Layout>
-      <main className="max-width px-10 pt-32 flex flex-col md:grid md:grid-cols-2 md:grid-flow-row md:gap-10 overflow-hidden">
+      <main className="max-width px-10 pt-32 flex flex-col lg:grid lg:grid-cols-2 lg:grid-flow-row lg:gap-10 overflow-hidden">
         <section className="mb-32">
           <h1 className="text-5xl mb-20   text-primary-color">
             Send me a Message
@@ -122,11 +122,11 @@ export default function Contact() {
           />
         </section>
         <section
-          className="bg-gradient-to-b from-gray-800  to-blue-900  relative  w-screen left-[calc(-50vw_+_50%)]
+          className="bg-gradient-to-b from-gray-800  to-gray-700  relative  w-screen left-[calc(-50vw_+_50%)]
                                                                               md:w-screen md:right-0 md:left-auto"
         >
           <Image
-            className="w-full h-full object-cover absolute mix-blend-overlay"
+            className="w-full h-full object-cover absolute mix-blend-overlay blur-[1.5px]"
             alt="background"
             src={background}
           />
@@ -138,7 +138,7 @@ export default function Contact() {
                 brun0yuj1ym02@gmail.com
               </li>
               <li className="flex items-center gap-3 lg:text-2xl">
-                <LinkedinLogo className="text-3xl " />
+                <i className="devicon-linkedin-plain text-3xl  "></i>
                 bruno-maruya
               </li>
               <li className="flex items-center gap-3 lg:text-2xl">
