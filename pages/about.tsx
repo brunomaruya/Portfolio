@@ -10,26 +10,37 @@ export default function About() {
     <>
       <Layout>
         <main className="max-width  px-10">
-          <section className="mt-5 md:mt-0 h-screen flex flex-col items-start justify-center">
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-60">
+          <section className="mt-5 md:mt-0  h-screen flex flex-col items-start justify-center">
+            <div className="w-full flex flex-col md:flex-row items-center md:items-start md:justify-between gap-10 md:gap-60">
               <div>
                 <h1 className=" text-4xl md:text-5xl mb-4 text-center md:text-left">
                   <span className="text-primary-color">Know Who </span>I Am
                 </h1>
-                <p className="">
-                  Hi Everyone, I am Soumyajit Behera from Bhubaneswar, India. I
-                  am a junior pursuing IMSC in Maths and Computing in BIT Mesra.
-                </p>
+                <div className="md:text-2xl">
+                  <p className="mb-3">
+                    <span className="text-primary-color">Hi Everyone</span> , I
+                    am Bruno Maruya from Aichi, Japan.
+                  </p>
+                  <p>
+                    Learning{' '}
+                    <span className="text-primary-color">
+                      Front-End Development
+                    </span>{' '}
+                    through Internet Courses and applying the acquired knowledge
+                    in my projects
+                  </p>
+                </div>
               </div>
+
               <Image
                 src={profileImg}
                 alt=""
-                className="max-w-[17rem] max-h-[17rem] object-cover  "
+                className="max-w-[17rem] max-h-[17rem] md:max-w-[20rem] md:max-h-[20rem] object-cover  rounded-full"
               />
             </div>
           </section>
-          <section className="w-full  ">
-            <h1 className="text-5xl mt-[-3rem] md:mt-[-8rem] mb-14 flex justify-center">
+          <section className="w-full   ">
+            <h1 className="text-5xl mt-[-6rem] md:mt-[-10rem] mb-14 flex justify-center">
               <span className="text-primary-color">Skills</span>
             </h1>
             <div className="flex justify-center flex-wrap gap-x-3 md:gap-x-20 gap-y-10">

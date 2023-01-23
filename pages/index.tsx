@@ -38,24 +38,20 @@ export default function Home() {
                 Let Me <span className="text-primary-color">Introduce</span>{' '}
                 Myself
               </h1>
-              <p className="mb-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Praesentium consectetur earum, velit, saepe dolorem culpa
-                consequuntur fugit facilis adipisci corporis deserunt sed
-                provident blanditiis quo esse sit. At, voluptate deleniti.
-              </p>
-              <p className="mb-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Praesentium consectetur earum, velit, saepe dolorem culpa
-                consequuntur fugit facilis adipisci corporis deserunt sed
-                provident blanditiis quo esse sit. At, voluptate deleniti.
-              </p>
-              <p className="mb-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Praesentium consectetur earum, velit, saepe dolorem culpa
-                consequuntur fugit facilis adipisci corporis deserunt sed
-                provident blanditiis quo esse sit. At, voluptate deleniti.
-              </p>
+              <div className="text-xl">
+                <p className="mb-6">
+                  Always looking to learn new skills, take on extra
+                  responsibilities, and grow professionally.
+                </p>
+                <p className="mb-6">
+                  Taking Computer Science Course at <i>Cruzeiro do Sul</i>{' '}
+                  College currently
+                </p>
+                <p className="mb-6">
+                  I am a Brazilian living in Japan eager to work as Front-End
+                  Developer
+                </p>
+              </div>
             </div>
             <Image
               className="max-w-[15rem] max-h-[15rem] object-cover rounded-full"
