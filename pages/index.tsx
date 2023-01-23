@@ -17,13 +17,13 @@ export default function Home() {
                   Hi There!
                 </h1>
 
-                <h1 className="text-5xl text-center sm:text-6xl lg:text-7xl sm:text-left">
+                <h1 className="text-4xl md:text-5xl text-center sm:text-6xl lg:text-7xl sm:text-left">
                   I&apos;m&nbsp;
-                  <span className="block xl:inline text-primary-color">
+                  <span className="inline xl:inline text-primary-color">
                     Bruno Maruya
                   </span>
                 </h1>
-                <h2 className="mt-5 text-3xl text-center sm:text-4xl lg:text-5xl sm:text-left text-primary-color">
+                <h2 className="mt-5 text-2xl text-center sm:text-4xl lg:text-5xl sm:text-left text-primary-color">
                   Front-End Developer
                 </h2>
               </div>
@@ -63,9 +63,9 @@ export default function Home() {
               src={profileImg}
             />
           </section>
-          <section className="flex flex-col justify-center items-center mt-20">
+          <section className="flex flex-col justify-center items-center mt-20 mb-[-3rem]">
             <h1 className="text-5xl mb-7">Find Me On</h1>
-            <h2 className="text-2xl">
+            <h2 className="text-2xl text-center">
               Feel free to{' '}
               <strong className="text-primary-color ">connect</strong> with me
             </h2>
