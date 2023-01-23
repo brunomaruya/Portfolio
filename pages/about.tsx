@@ -9,24 +9,22 @@ export default function About() {
   return (
     <>
       <Layout>
-        <main className="max-width px-10">
+        <main className="max-width  px-10">
           <section className="mt-5 md:mt-0 h-screen flex flex-col items-start justify-center">
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-60">
               <div>
-                <h1 className="text-5xl mb-4 text-center md:text-left">
+                <h1 className=" text-4xl md:text-5xl mb-4 text-center md:text-left">
                   <span className="text-primary-color">Know Who </span>I Am
                 </h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                  facilis blanditiis, aspernatur ipsa fuga repellat excepturi
-                  iure. Dicta mollitia aut eius sint minus ipsam, sit
-                  recusandae, provident, enim eveniet iure.
+                <p className="">
+                  Hi Everyone, I am Soumyajit Behera from Bhubaneswar, India. I
+                  am a junior pursuing IMSC in Maths and Computing in BIT Mesra.
                 </p>
               </div>
               <Image
                 src={profileImg}
                 alt=""
-                className="max-w-[15rem] max-h-[15rem] object-cover "
+                className="max-w-[17rem] max-h-[17rem] object-cover  "
               />
             </div>
           </section>
@@ -34,21 +32,23 @@ export default function About() {
             <h1 className="text-5xl mt-[-3rem] md:mt-[-8rem] mb-14 flex justify-center">
               <span className="text-primary-color">Skills</span>
             </h1>
-            <div className="flex justify-center flex-wrap gap-x-20 gap-y-10">
+            <div className="flex justify-center flex-wrap gap-x-3 md:gap-x-20 gap-y-10">
               {skillsLogosData.map((skillLogo) => {
                 return (
                   <div
                     key={skillLogo.id}
                     className="flex justify-center items-center border rounded-md
-                    border-primary-color p-10 hover:scale-105 duration-100"
+                    border-primary-color p-3 md:p-10 hover:scale-105 duration-100"
                   >
-                    <i className={`text-7xl ${skillLogo.logoUrl}`}></i>
+                    <i
+                      className={`text-5xl md:text-7xl ${skillLogo.logoUrl}`}
+                    ></i>
                   </div>
                 );
               })}
             </div>
           </section>
-          <section className="mt-48 mb-40 flex flex-col items-center justify-center">
+          <section className="mt-10 md:mt-48 mb-10 md:mb-40 flex flex-col items-center justify-center">
             <h1 className="text-5xl mb-14 ">
               Days I&nbsp;<strong className="text-primary-color">Code</strong>
             </h1>

@@ -23,6 +23,9 @@ export default function Home() {
                     Bruno Maruya
                   </span>
                 </h1>
+                <h2 className="mt-5 text-3xl text-center sm:text-4xl lg:text-5xl sm:text-left text-primary-color">
+                  Front-End Developer
+                </h2>
               </div>
               <div className="">
                 <img src="https://media.giphy.com/media/zhYSVCirREeIZtONCI/giphy.gif" />
