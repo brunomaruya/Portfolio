@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <div className=" w-full mt-auto ">
+    <div className=" w-full  ">
       <div className=" flex flex-col md:flex-row gap-3 justify-between items-center bg-black py-5 px-6">
         <div>
           <Link href="https://soumyajit.vercel.app/" target="_blank">
