@@ -14,7 +14,7 @@ export default function Resume() {
   return (
     <Layout>
       <section className="  flex flex-col items-center">
-        <h1 className="pt-32 text-center text-5xl mb-6 md:mb-10 text-primary-color">
+        <h1 className="pt-20  md:pt-32 text-center text-5xl mb-6 md:mb-10 text-primary-color">
           Resume
         </h1>
 
