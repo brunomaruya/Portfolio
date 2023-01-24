@@ -123,7 +123,7 @@ export default function Contact() {
         </section>
         <section
           className="bg-gradient-to-b from-gray-800  to-gray-700  relative  w-screen left-[calc(-50vw_+_50%)]
-                                                                              md:w-screen md:right-0 md:left-auto"
+                     pb-5                                                         md:w-screen md:right-0 md:left-auto"
         >
           <Image
             className="w-full h-full object-cover absolute mix-blend-overlay blur-[1.5px]"

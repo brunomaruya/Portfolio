@@ -59,7 +59,7 @@ export default function Home() {
               src={profileImg}
             />
           </section>
-          <section className="flex flex-col justify-center items-center mt-20 mb-[-3rem]">
+          <section className="flex flex-col justify-center items-center mt-20 mb-[-8rem] md:mb-[-3rem]">
             <h1 className="text-5xl mb-7">Find Me On</h1>
             <h2 className="text-2xl text-center">
               Feel free to{' '}

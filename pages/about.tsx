@@ -40,7 +40,7 @@ export default function About() {
             </div>
           </section>
           <section className="w-full   ">
-            <h1 className="text-5xl mt-[-6rem] md:mt-[-10rem] mb-14 flex justify-center">
+            <h1 className="text-5xl mt-[-3rem] md:mt-[-10rem] mb-14 flex justify-center">
               <span className="text-primary-color">Skills</span>
             </h1>
             <div className="flex justify-center flex-wrap gap-x-3 md:gap-x-20 gap-y-10">
