@@ -10,7 +10,7 @@ export default function About() {
     <>
       <Layout>
         <main className="max-width  px-10">
-          <section className="mt-5 md:mt-0  h-screen flex flex-col items-start justify-center">
+          <section className="pt-5 md:pt-0  h-screen flex flex-col items-start justify-center">
             <div className="w-full flex flex-col md:flex-row items-center md:items-start md:justify-between gap-10 md:gap-60">
               <div>
                 <h1 className=" text-4xl md:text-5xl mb-4 text-center md:text-left">
