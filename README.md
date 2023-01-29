@@ -9,3 +9,5 @@
     <img  src="https://github.com/brunomaruya/Portfolio/blob/main/gifs/Mobile.gif" />
   </div>
 </div>
+
+This portfolio was made using  [Soumyajit4419](https://github.com/soumyajit4419/Portfolio)'s design as reference
