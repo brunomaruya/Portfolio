@@ -14,7 +14,8 @@ This portfolio was made using  [Soumyajit4419](https://github.com/soumyajit4419/
 
 ## Built With
 
-- React
+- NextJs
+- Typescript
 - Tailwind
 - Emailjs
 - VsCode
