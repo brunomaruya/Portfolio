@@ -30,7 +30,7 @@ export default function Contact() {
         String(process.env.NEXT_PUBLIC_ANALYTICS_SERVICE_ID),
         String(process.env.NEXT_PUBLIC_ANALYTICS_TEMPLATE_ID),
         e.currentTarget,
-        String(process.env.NEXT_PUBLIC_ANALYTICS_PUBLIC_ID)
+        'bm8fOXqudKbLpDQIr'
       )
       .then(
         (result) => {
