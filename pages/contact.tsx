@@ -29,17 +29,15 @@ export default function Contact() {
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(serviceId, templateId, e.currentTarget, 'bm8fOXqudKbLpDQIr')
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log('working in local');
-        },
-        (error) => {
-          console.log(`The errrrrorr is: ${error.text}`);
-        }
-      );
+    emailjs.sendForm(serviceId, templateId, e.currentTarget, publicId).then(
+      (result) => {
+        console.log(result.text);
+        console.log('working in local');
+      },
+      (error) => {
+        console.log(`The errrrrorr is: ${error.text}`);
+      }
+    );
     e.currentTarget.reset();
     notify();
   };
