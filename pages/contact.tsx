@@ -9,10 +9,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
-  const [publicId2, setPublicId2] = useState('');
-  useEffect(() => {
-    setPublicId2(String(process.env.NEXT_PUBLIC_ANALYTICS_PUBLIC_ID));
-  }, []);
 
   const notify = () =>
     toast('Your message has been successfully sent!', {
@@ -25,10 +21,10 @@ export default function Contact() {
       progress: undefined,
       theme: 'dark',
     });
-  const serviceId = String(process.env.NEXT_PUBLIC_ANALYTICS_SERVICE_ID);
-  const templateId = String(process.env.NEXT_PUBLIC_ANALYTICS_TEMPLATE_ID);
-  const publicId = String(process.env.NEXT_PUBLIC_ANALYTICS_PUBLIC_ID);
-  console.log(process.env.NEXT_PUBLIC_ANALYTICS_PUBLIC_ID);
+  const serviceId = String(process.env.NEXT_PUBLIC_SERVICE_ID);
+  const templateId = String(process.env.NEXT_PUBLIC_TEMPLATE_ID);
+  const publicId = String(process.env.NEXT_PUBLIC_PUBLIC_ID);
+  console.log(process.env.NEXT_PUBLIC_PUBLIC_ID);
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -53,7 +49,7 @@ export default function Contact() {
       <main className="max-width px-10 pt-32 flex flex-col lg:grid lg:grid-cols-2 lg:grid-flow-row lg:gap-10 overflow-hidden">
         <section className="mb-32">
           <h1 className="text-5xl mb-20   text-primary-color">
-            Send me some Message {publicId2}
+            Send me some Message {publicId}
           </h1>
 
           <form
