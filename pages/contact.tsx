@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Envelope, GithubLogo, LinkedinLogo } from 'phosphor-react';
-import React, { FormEvent, useRef } from 'react';
+import React, { FormEvent, useEffect, useRef, useState } from 'react';
 import Layout from '../components/Layout';
 import background from '../public/images/code2.jpg';
 import emailjs from '@emailjs/browser';
@@ -9,6 +9,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
+  const [publicId2, setPublicId2] = useState('');
+  useEffect(() => {
+    setPublicId2(String(process.env.NEXT_PUBLIC_ANALYTICS_PUBLIC_ID));
+  }, []);
 
   const notify = () =>
     toast('Your message has been successfully sent!', {
@@ -49,7 +53,7 @@ export default function Contact() {
       <main className="max-width px-10 pt-32 flex flex-col lg:grid lg:grid-cols-2 lg:grid-flow-row lg:gap-10 overflow-hidden">
         <section className="mb-32">
           <h1 className="text-5xl mb-20   text-primary-color">
-            Send me some Message {publicId}
+            Send me some Message {publicId2}
           </h1>
 
           <form
