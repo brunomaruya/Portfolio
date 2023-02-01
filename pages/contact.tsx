@@ -21,22 +21,25 @@ export default function Contact() {
       progress: undefined,
       theme: 'dark',
     });
+  const serviceId = String(process.env.NEXT_PUBLIC_ANALYTICS_SERVICE_ID);
+  const templateId = String(process.env.NEXT_PUBLIC_ANALYTICS_TEMPLATE_ID);
+  const publicId = String(process.env.NEXT_PUBLIC_ANALYTICS_PUBLIC_ID);
+  console.log(publicId);
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const serviceId = String(process.env.NEXT_PUBLIC_ANALYTICS_SERVICE_ID);
-    const templateId = String(process.env.NEXT_PUBLIC_ANALYTICS_TEMPLATE_ID);
-    const publicId = String(process.env.NEXT_PUBLIC_ANALYTICS_PUBLIC_ID);
 
-    emailjs.sendForm(serviceId, templateId, e.currentTarget, publicId).then(
-      (result) => {
-        console.log(result.text);
-        console.log('working in local');
-      },
-      (error) => {
-        console.log(`The errrrrorr is: ${error.text}`);
-      }
-    );
+    emailjs
+      .sendForm(serviceId, templateId, e.currentTarget, 'bm8fOXqudKbLpDQIr')
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log('working in local');
+        },
+        (error) => {
+          console.log(`The errrrrorr is: ${error.text}`);
+        }
+      );
     e.currentTarget.reset();
     notify();
   };
