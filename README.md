@@ -25,4 +25,4 @@ This portfolio was made using  [Soumyajit4419](https://github.com/soumyajit4419/
 
 - Multi-Page Layout
 - Styled with React-Bootstrap and Css with easy to customize colors
-- Fully Responsive
+- Fully-Responsive
