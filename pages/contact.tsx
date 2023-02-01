@@ -24,7 +24,7 @@ export default function Contact() {
   const serviceId = String(process.env.NEXT_PUBLIC_ANALYTICS_SERVICE_ID);
   const templateId = String(process.env.NEXT_PUBLIC_ANALYTICS_TEMPLATE_ID);
   const publicId = String(process.env.NEXT_PUBLIC_ANALYTICS_PUBLIC_ID);
-  console.log(publicId);
+  console.log(process.env.NEXT_PUBLIC_ANALYTICS_PUBLIC_ID);
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
