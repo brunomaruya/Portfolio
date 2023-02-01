@@ -27,10 +27,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        String(process.env.NEXT_PUBLIC_ANALYTICS_SERVICE_ID),
+        'bm8fOXqudKbLpDQIr',
         String(process.env.NEXT_PUBLIC_ANALYTICS_TEMPLATE_ID),
         e.currentTarget,
-        'bm8fOXqudKbLpDQIr'
+        String(process.env.NEXT_PUBLIC_ANALYTICS_SERVICE_ID)
       )
       .then(
         (result) => {
