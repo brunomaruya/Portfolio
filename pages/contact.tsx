@@ -35,6 +35,7 @@ export default function Contact() {
       .then(
         (result) => {
           console.log(result.text);
+          console.log('working in local');
         },
         (error) => {
           console.log(error.text);
