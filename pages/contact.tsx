@@ -38,7 +38,7 @@ export default function Contact() {
           console.log('working in local');
         },
         (error) => {
-          console.log(error.text);
+          console.log(`The errrrrorr is: ${error.text}`);
         }
       );
     e.currentTarget.reset();
