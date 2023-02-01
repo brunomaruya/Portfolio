@@ -47,7 +47,7 @@ export default function Contact() {
       <main className="max-width px-10 pt-32 flex flex-col lg:grid lg:grid-cols-2 lg:grid-flow-row lg:gap-10 overflow-hidden">
         <section className="mb-32">
           <h1 className="text-5xl mb-20   text-primary-color">
-            Send me some Message {publicId}
+            Send me some Message
           </h1>
 
           <form
