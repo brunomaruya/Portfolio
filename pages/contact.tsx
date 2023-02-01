@@ -28,7 +28,8 @@ export default function Contact() {
     emailjs
       .sendForm(
         'service_6jq2fq3',
-        String(process.env.NEXT_PUBLIC_ANALYTICS_TEMPLATE_ID),
+        // String(process.env.NEXT_PUBLIC_ANALYTICS_TEMPLATE_ID),
+        'template_pvto8xr',
         e.currentTarget,
         'bm8fOXqudKbLpDQIr'
       )
